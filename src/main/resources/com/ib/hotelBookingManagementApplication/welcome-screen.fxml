@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.ib.hotelBookingManagementApplication.controllers.MainController">
+    <children>
+        <GridPane alignment="CENTER" layoutX="405.0" layoutY="217.0" prefHeight="600.0" prefWidth="900.0"
+                  AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                  AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="745.2000427246094" minWidth="10.0"
+                                   prefWidth="599.1999755859375"/>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="445.20001220703125" minWidth="10.0"
+                                   prefWidth="301.60002441406255"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <ImageView fitHeight="600.0" fitWidth="608.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/ezgif.com-effects.gif"/>
+                    </image>
+                </ImageView>
+                <VBox alignment="CENTER" prefHeight="600.0" prefWidth="286.0" spacing="20.0" GridPane.columnIndex="1">
+                    <children>
+                        <Label text="Welcome to IB Resorts!">
+                            <font>
+                                <Font name="System Bold" size="24.0"/>
+                            </font>
+                        </Label>
+                        <Button fx:id="makeReservationButton" mnemonicParsing="false" prefWidth="150.0"
+                                text="Make a Reservation"/>
+                        <Button fx:id="giveFeedbackButton" mnemonicParsing="false" prefWidth="150.0"
+                                text="Give Feedback"/>
+                        <Button fx:id="helpButton" mnemonicParsing="false" prefWidth="150.0"
+                                text="Information &amp; Help"/>
+                    </children>
+                </VBox>
+            </children>
+        </GridPane>
+        <MenuBar prefHeight="26.0" prefWidth="900.0" useSystemMenuBar="true">
+            <menus>
+                <Menu fx:id="adminLoginMenu" mnemonicParsing="false" text="Admin Login">
+                    <items>
+                        <MenuItem fx:id="adminLoginMenuItem" mnemonicParsing="false" text="Admin Login"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.ib.hotelBookingManagementApplication.controllers.ReservationController">
+    <GridPane alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="845.199951171875" minWidth="10.0"
+                               prefWidth="434.5333557128906"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="845.0666442871095" minWidth="10.0"
+                               prefWidth="845.0666442871095"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+        </rowConstraints>
+        <children>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="802.0" GridPane.columnIndex="1">
+                <children>
+                    <Label fx:id="reservationStepperLabel" text="Step 1/3">
+                        <font>
+                            <Font name="System Bold" size="18.0"/>
+                        </font>
+                    </Label>
+                    <TabPane fx:id="tabPane" focusTraversable="false" prefHeight="400.0" prefWidth="650.0"
+                             stylesheets="@stylesheet/styles.css" tabClosingPolicy="UNAVAILABLE">
+                        <tabs>
+                            <Tab fx:id="step1" text="Untitled Tab 1">
+                                <content>
+                                    <AnchorPane fx:id="step1AP" prefHeight="400.0" prefWidth="650.0"
+                                                xmlns="http://javafx.com/javafx/23.0.1"
+                                                xmlns:fx="http://javafx.com/fxml/1">
+
+                                        <children>
+                                            <GridPane alignment="CENTER" prefHeight="400.0" prefWidth="650.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                <columnConstraints>
+                                                    <ColumnConstraints fillWidth="false" halignment="CENTER"
+                                                                       hgrow="SOMETIMES"/>
+                                                    <ColumnConstraints fillWidth="false" halignment="LEFT"
+                                                                       hgrow="SOMETIMES" minWidth="10.0"
+                                                                       prefWidth="100.0"/>
+                                                </columnConstraints>
+                                                <rowConstraints>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                    vgrow="SOMETIMES"/>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                    vgrow="SOMETIMES"/>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                    vgrow="SOMETIMES"/>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                    vgrow="SOMETIMES"/>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                    vgrow="SOMETIMES"/>
+                                                </rowConstraints>
+                                                <children>
+                                                    <Label text="Number of guests" GridPane.rowIndex="1"/>
+                                                    <Label text="Start Date" GridPane.rowIndex="2"/>
+                                                    <Label text="End Date" GridPane.rowIndex="3"/>
+                                                    <TextField fx:id="numberGuests" minWidth="-Infinity"
+                                                               prefHeight="26.0" prefWidth="174.0"
+                                                               GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </TextField>
+                                                    <DatePicker fx:id="startDate" GridPane.columnIndex="1"
+                                                                GridPane.rowIndex="2">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </DatePicker>
+                                                    <DatePicker fx:id="endDate" GridPane.columnIndex="1"
+                                                                GridPane.rowIndex="3">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </DatePicker>
+                                                </children>
+                                                <opaqueInsets>
+                                                    <Insets bottom="5.0" left="5.0" right="5.0"/>
+                                                </opaqueInsets>
+                                            </GridPane>
+                                        </children>
+                                    </AnchorPane>
+
+                                </content>
+                            </Tab>
+                            <Tab fx:id="step2" text="Untitled Tab 2">
+                                <content>
+
+                                    <AnchorPane fx:id="step2AP" prefHeight="400.0" prefWidth="650.0"
+                                                xmlns="http://javafx.com/javafx/17.0.12"
+                                                xmlns:fx="http://javafx.com/fxml/1">
+                                        <!--            fx:controller="controllers.com.ib.hotelBookingManagementApplication.ReservationController">-->
+                                        <children>
+                                            <GridPane layoutX="74.0" layoutY="49.0" prefHeight="400.0" prefWidth="650.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0"
+                                                                       minWidth="10.0" prefWidth="148.60001220703126"/>
+                                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="523.0000198364258"
+                                                                       minWidth="10.0" prefWidth="500.5999877929688"/>
+                                                </columnConstraints>
+                                                <rowConstraints>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                    vgrow="SOMETIMES"/>
+                                                </rowConstraints>
+                                                <children>
+                                                    <VBox alignment="CENTER" prefHeight="400.0" prefWidth="126.0">
+                                                        <children>
+                                                            <ImageView accessibleText="Single Room" fitHeight="86.0"
+                                                                       fitWidth="70.0" pickOnBounds="true"
+                                                                       preserveRatio="true">
+                                                                <image>
+                                                                    <Image url="@../../images/single-room.png"/>
+                                                                </image>
+                                                                <viewport>
+                                                                    <Rectangle2D/>
+                                                                </viewport>
+                                                            </ImageView>
+                                                            <Label text="Single Room : 450 CAD">
+                                                                <VBox.margin>
+                                                                    <Insets bottom="5.0" left="5.0" right="5.0"
+                                                                            top="5.0"/>
+                                                                </VBox.margin>
+                                                                <font>
+                                                                    <Font name="System Bold" size="12.0"/>
+                                                                </font>
+                                                            </Label>
+                                                            <ImageView fitHeight="81.0" fitWidth="70.0"
+                                                                       pickOnBounds="true" preserveRatio="true">
+                                                                <image>
+                                                                    <Image url="@../../images/double-room.png"/>
+                                                                </image>
+                                                            </ImageView>
+                                                            <Label text="Double Room : 700 CAD">
+                                                                <VBox.margin>
+                                                                    <Insets bottom="5.0" left="5.0" right="5.0"
+                                                                            top="5.0"/>
+                                                                </VBox.margin>
+                                                                <font>
+                                                                    <Font name="System Bold" size="12.0"/>
+                                                                </font>
+                                                            </Label>
+                                                            <ImageView fitHeight="96.0" fitWidth="70.0"
+                                                                       pickOnBounds="true" preserveRatio="true">
+                                                                <image>
+                                                                    <Image url="@../../images/deluxe-room.png"/>
+                                                                </image>
+                                                            </ImageView>
+                                                            <Label text="Deluxe Suite : 1200 CAD">
+                                                                <VBox.margin>
+                                                                    <Insets bottom="5.0" left="5.0" right="5.0"
+                                                                            top="5.0"/>
+                                                                </VBox.margin>
+                                                                <font>
+                                                                    <Font name="System Bold" size="12.0"/>
+                                                                </font>
+                                                            </Label>
+                                                            <ImageView fitHeight="110.0" fitWidth="70.0"
+                                                                       pickOnBounds="true" preserveRatio="true">
+                                                                <image>
+                                                                    <Image url="@../../images/pent-house.png"/>
+                                                                </image>
+                                                            </ImageView>
+                                                            <Label text="Pent House: 1500 CAD">
+                                                                <VBox.margin>
+                                                                    <Insets left="5.0" right="5.0" top="5.0"/>
+                                                                </VBox.margin>
+                                                                <font>
+                                                                    <Font name="System Bold" size="12.0"/>
+                                                                </font>
+                                                            </Label>
+                                                        </children>
+                                                    </VBox>
+                                                    <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                                        <children>
+                                                            <ListView fx:id="suggestionsListView" prefHeight="226.0"
+                                                                      prefWidth="461.0">
+                                                                <VBox.margin>
+                                                                    <Insets left="20.0" right="20.0" top="10.0"/>
+                                                                </VBox.margin>
+                                                            </ListView>
+                                                            <GridPane alignment="CENTER">
+                                                                <columnConstraints>
+                                                                    <ColumnConstraints halignment="CENTER"
+                                                                                       hgrow="SOMETIMES" minWidth="10.0"
+                                                                                       prefWidth="100.0"/>
+                                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+                                                                                       prefWidth="100.0"/>
+                                                                </columnConstraints>
+                                                                <rowConstraints>
+                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                                    vgrow="SOMETIMES"/>
+                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                                    vgrow="SOMETIMES"/>
+                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                                    vgrow="SOMETIMES"/>
+                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                                    vgrow="SOMETIMES"/>
+                                                                    <RowConstraints minHeight="10.0" prefHeight="30.0"
+                                                                                    vgrow="SOMETIMES"/>
+                                                                </rowConstraints>
+                                                                <children>
+                                                                    <Label text="Selected Rooms:">
+                                                                        <font>
+                                                                            <Font name="System Bold" size="12.0"/>
+                                                                        </font>
+                                                                        <GridPane.margin>
+                                                                            <Insets bottom="5.0" left="5.0" right="5.0"
+                                                                                    top="5.0"/>
+                                                                        </GridPane.margin>
+                                                                    </Label>
+                                                                    <Label fx:id="singleRoomsLabel" text="Single Rooms:"
+                                                                           GridPane.rowIndex="1">
+                                                                        <GridPane.margin>
+                                                                            <Insets bottom="5.0" left="5.0" right="5.0"
+                                                                                    top="5.0"/>
+                                                                        </GridPane.margin>
+                                                                    </Label>
+                                                                    <Label fx:id="doubleRoomsLabel"
+                                                                           text="Double Room(s)" GridPane.rowIndex="2">
+                                                                        <GridPane.margin>
+                                                                            <Insets bottom="5.0" left="5.0" right="5.0"
+                                                                                    top="5.0"/>
+                                                                        </GridPane.margin>
+                                                                    </Label>
+                                                                    <Label fx:id="deluxeSuiteLabel"
+                                                                           text="Deluxe Suite(s):"
+                                                                           GridPane.rowIndex="3">
+                                                                        <GridPane.margin>
+                                                                            <Insets bottom="5.0" left="5.0" right="5.0"
+                                                                                    top="5.0"/>
+                                                                        </GridPane.margin>
+                                                                    </Label>
+                                                                    <Label fx:id="pentHousesLabel" text="Pent House(s):"
+                                                                           GridPane.rowIndex="4">
+                                                                        <GridPane.margin>
+                                                                            <Insets bottom="5.0" left="5.0" right="5.0"
+                                                                                    top="5.0"/>
+                                                                        </GridPane.margin>
+                                                                    </Label>
+                                                                    <TextField fx:id="doubleRoomCount"
+                                                                               GridPane.columnIndex="1"
+                                                                               GridPane.rowIndex="2">
+                                                                        <GridPane.margin>
+                                                                            <Insets bottom="5.0" left="5.0" right="20.0"
+                                                                                    top="5.0"/>
+                                                                        </GridPane.margin>
+                                                                    </TextField>
+                                                                    <TextField fx:id="singleRoomCount"
+                                                                               GridPane.columnIndex="1"
+                                                                               GridPane.rowIndex="1">
+                                                                        <GridPane.margin>
+                                                                            <Insets bottom="5.0" left="5.0" right="20.0"
+                                                                                    top="5.0"/>
+                                                                        </GridPane.margin>
+                                                                    </TextField>
+                                                                    <TextField fx:id="deluxeSuiteCount"
+                                                                               GridPane.columnIndex="1"
+                                                                               GridPane.rowIndex="3">
+                                                                        <GridPane.margin>
+                                                                            <Insets bottom="5.0" left="5.0" right="20.0"
+                                                                                    top="5.0"/>
+                                                                        </GridPane.margin>
+                                                                    </TextField>
+                                                                    <TextField fx:id="pentHouseCount"
+                                                                               GridPane.columnIndex="1"
+                                                                               GridPane.rowIndex="4">
+                                                                        <GridPane.margin>
+                                                                            <Insets bottom="5.0" left="5.0" right="20.0"
+                                                                                    top="5.0"/>
+                                                                        </GridPane.margin>
+                                                                    </TextField>
+                                                                </children>
+                                                                <VBox.margin>
+                                                                    <Insets/>
+                                                                </VBox.margin>
+                                                            </GridPane>
+                                                        </children>
+                                                    </VBox>
+                                                </children>
+                                            </GridPane>
+                                        </children>
+                                    </AnchorPane>
+                                </content>
+                            </Tab>
+                            <Tab fx:id="step3" text="Untitled Tab">
+                                <content>
+                                    <AnchorPane fx:id="step3AP" prefHeight="400.0" prefWidth="650.0"
+                                                xmlns="http://javafx.com/javafx/23.0.1"
+                                                xmlns:fx="http://javafx.com/fxml/1">
+                                        <children>
+                                            <GridPane prefHeight="442.4" prefWidth="650.4" AnchorPane.bottomAnchor="0.0"
+                                                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                                      AnchorPane.topAnchor="0.0">
+                                                <columnConstraints>
+                                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"
+                                                                       maxWidth="320.20001220703125" minWidth="10.0"
+                                                                       prefWidth="281.0"/>
+                                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.0"
+                                                                       minWidth="10.0" prefWidth="369.0"/>
+                                                </columnConstraints>
+                                                <rowConstraints>
+                                                    <RowConstraints maxHeight="41.60001220703125" minHeight="10.0"
+                                                                    prefHeight="36.0" vgrow="SOMETIMES"/>
+                                                    <RowConstraints maxHeight="52.799993896484374" minHeight="10.0"
+                                                                    prefHeight="36.0" vgrow="SOMETIMES"/>
+                                                    <RowConstraints maxHeight="72.59998168945313" minHeight="10.0"
+                                                                    prefHeight="36.0" vgrow="SOMETIMES"/>
+                                                    <RowConstraints maxHeight="76.60001220703126" minHeight="10.0"
+                                                                    prefHeight="36.0" vgrow="SOMETIMES"/>
+                                                    <RowConstraints maxHeight="74.59998168945313" minHeight="10.0"
+                                                                    prefHeight="36.0" vgrow="SOMETIMES"/>
+                                                    <RowConstraints maxHeight="123.99999999999997" minHeight="10.0"
+                                                                    prefHeight="119.99999999999997" vgrow="SOMETIMES"/>
+                                                    <RowConstraints maxHeight="45.60001220703123" minHeight="10.0"
+                                                                    prefHeight="36.0" vgrow="SOMETIMES"/>
+                                                    <RowConstraints maxHeight="48.39999999999998" minHeight="10.0"
+                                                                    prefHeight="36.0" vgrow="SOMETIMES"/>
+                                                </rowConstraints>
+                                                <children>
+                                                    <Label text="Guest Name"/>
+                                                    <Label text="Email" GridPane.rowIndex="1"/>
+                                                    <Label text="Phone" GridPane.rowIndex="2"/>
+                                                    <Label text="No of Guests" GridPane.rowIndex="3"/>
+                                                    <Label text="Stay Dates (Start - End)" GridPane.rowIndex="4"/>
+                                                    <Label text="Estimated Total on Checkout" GridPane.rowIndex="7"/>
+                                                    <Label text="Tax (13%)" GridPane.rowIndex="6"/>
+                                                    <TextField fx:id="guestName" GridPane.columnIndex="1">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="20.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </TextField>
+                                                    <TextField fx:id="guestEmail" GridPane.columnIndex="1"
+                                                               GridPane.rowIndex="1">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="20.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </TextField>
+                                                    <TextField fx:id="guestPhone" GridPane.columnIndex="1"
+                                                               GridPane.rowIndex="2">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="20.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </TextField>
+                                                    <TextField fx:id="numberOfGuestsConfirmationPage" editable="false"
+                                                               GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="20.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </TextField>
+                                                    <TextField fx:id="datesOfStay" editable="false"
+                                                               GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="20.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </TextField>
+                                                    <TextArea fx:id="costBreakdown" editable="false" prefHeight="98.0"
+                                                              prefWidth="326.0" GridPane.columnIndex="1"
+                                                              GridPane.rowIndex="5">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="20.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </TextArea>
+                                                    <TextField fx:id="applicableTax" editable="false"
+                                                               GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="20.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </TextField>
+                                                    <TextField fx:id="estimatedTotal" editable="false"
+                                                               GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                                        <GridPane.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="20.0" top="5.0"/>
+                                                        </GridPane.margin>
+                                                    </TextField>
+                                                    <Label text="Cost Breakdown" GridPane.rowIndex="5"/>
+                                                </children>
+                                            </GridPane>
+                                        </children>
+                                    </AnchorPane>
+
+                                </content>
+                            </Tab>
+                        </tabs>
+                    </TabPane>
+                    <VBox alignment="CENTER" spacing="5.0">
+                        <children>
+                            <HBox alignment="CENTER" spacing="5.0">
+                                <children>
+                                    <Button fx:id="backButton" contentDisplay="CENTER" minHeight="-Infinity"
+                                            minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0"
+                                            prefWidth="150.0" text="Back" textAlignment="CENTER"/>
+                                    <Button fx:id="nextButton" minHeight="-Infinity" minWidth="-Infinity"
+                                            mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Next"/>
+                                </children>
+                            </HBox>
+                            <Button fx:id="cancelButton" minHeight="-Infinity" minWidth="-Infinity"
+                                    mnemonicParsing="false" prefHeight="26.0" prefWidth="305.0" text="Cancel"/>
+                        </children>
+                        <VBox.margin>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                        </VBox.margin>
+                    </VBox>
+                </children>
+                <GridPane.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </GridPane.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="800.0" prefWidth="488.0" spacing="5.0">
+                <children>
+                    <Label text="Reserve a Room">
+                        <font>
+                            <Font name="System Bold" size="20.0"/>
+                        </font>
+                    </Label>
+                    <Button fx:id="informationAndHelpButton" mnemonicParsing="false" text="Information &amp; Help"/>
+                </children>
+            </VBox>
+        </children>
+    </GridPane>
+</AnchorPane>
